@@ -126,68 +126,6 @@ namespace CustomerWebUsingApi.Controllers
                 return RedirectToAction("Index");
             }
             return View();
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //private string url = "https://localhost:7165/api/Customer/";
-        //private HttpClient client = new HttpClient();
-
-        //[HttpGet]
-        //public IActionResult Index()
-        //{
-        //    List<Customer> customers = new List<Customer>();
-        //    HttpResponseMessage response = client.GetAsync(url).Result;
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        string result = response.Content.ReadAsStringAsync().Result;
-        //        var data = JsonConvert.DeserializeObject <List<Customer>>(result);
-        //        if(data != null)
-        //        {
-        //            customers = data;
-        //        }
-        //    }
-        //    return View(customers);
-        //}
-
-        //[HttpGet]
-        //public IActionResult Create()
-        //{
-        //    return View();
-        //}
-
-        //[HttpPost]
-        //public IActionResult Create(Customer cus)
-        //{
-        //    string data = JsonConvert.SerializeObject(cus);
-        //    StringContent content = new StringContent(data, Encoding.UTF8, "application/json" );
-        //    HttpResponseMessage response = client.PostAsync(url, content).Result;
-        //    if(response.IsSuccessStatusCode)
-        //    {
-        //        TempData["insert_message"] = "Customer Added..";
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View();
-        //}
+        }
     }
 }
